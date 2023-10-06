@@ -1,0 +1,21 @@
+#headingId{
+    color: blue!;
+
+}
+.headingClass{
+    color: brown!important;
+
+}
+#headingId{
+    color:red;
+
+}
+img{
+    display: block;
+}
+*{
+    font-size: 25px;
+}
+div{
+    display: inline;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML Forms</title>
+    </head>
+    <body>
+        <!-- HTML Forms: to allow the users to input and submit the data -->
+        <!-- user registration, login, data submission, etc..-->
+        <form method="get">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" placeholder="type your name..." id="name"name="name">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" placeholder="type your email..." id="email"name="email">
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" placeholder="type your password ..." id="password"name="password"required>
+            </div>           
+            <div>
+                <!-- radio buttons -->
+                <label>Gender</label>
+                <input type="radio"name="gender"id="male"value="male">
+                <label>Male</label>
+
+                <input type="radio"name="gender"id="female"value="female"checked>
+                <label>Female</label>
+            </div>
+            <div>
+                <input type="checkbox"name="choice" value="Option1"checked>
+                <label>Option1</label>
+
+                <input type="checkbox"name="choice" value="Option2">
+                <label>Option2</label>
+
+                <input type="checkbox"name="choice" value="Option3">
+                <label>Option3</label>
+
+                <input type="checkbox"name="choice" value="Option4">
+                <label>Option4</label>
+
+                <input type="checkbox"name="choice" value="Option5">
+                <label>Option5</label>
+
+                
+            </div>
+            <div>
+                <input type="color"name="color">
+            </div>
+            <div>
+                <input type="date" min="2023-09-04"max="2023-09-07">
+            </div>
+            <div>
+                <input type="datetime-local">
+            </div>
+
+            <div>
+                <input type="submit" value="Register">
+            </div>
+            <div>
+                <select name="country">
+                    <option>--Select--</option>
+                    <option value="USA">USA</option>
+                    <option value="INDIA">INDIA</option>
+                    <option value="CANADA">CANADA</option>
+                    <option value="UK">UK</option>
+                </select>
+            </div>
+           
+           
+            
+            
+        </form>
+    
+    </body>
+</html>
