@@ -1,6 +1,7 @@
 let obj1 = { name: "person 1", age: 5 };
 let obj2 = { age: 5, name: "person 1" };
 
+
 function compareJSON(obj1, obj2) {
   const sortedKeys1 = Object.keys(obj1).sort();
   const sortedKeys2 = Object.keys(obj2).sort();
@@ -14,14 +15,20 @@ function compareJSON(obj1, obj2) {
 const result = compareJSON(obj1, obj2);
 console.log("Comparison result:", result); 
 
+class Example {
+  constructor(...args) {
+    this.items = [...args];
+  }
+  toArray() {
+    return this.items;
+  }
+  push(...data) {
+    this.items.push(...data);
+  }
+}
 
 
-constructor(...args) {
-  this.items = [...args];
-}
-toArray(){
-  return this.items;
-}
-push(...data) {
-  this.items.push(...data);
-}
+// Usage
+const exampleInstance = new Example(1, 2, 3);
+exampleInstance.push(4, 5);
+console.log(exampleInstance.toArray());

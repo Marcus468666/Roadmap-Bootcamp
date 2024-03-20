@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Event Listener</title>
+    </head>
+    <body>
+        <!-- <button id="registerButton" onclick="registerButtonClickHandler()">
+            Register
+        </button>
+
+        <script>
+            function registerButtonClickHandler() {
+                console.log('register button clicked');
+            }
+
+        </script> -->
+        <!-- <button id="registerButton">
+            Register
+        </button>
+
+        <script>
+            function registerButtonClickHandler() {
+                console.log('register button clicked');
+            }
+            let registerButton = document.getElementById('registerButton');
+            registerButton.addEventListener('click', registerButtonClickHandler);
+
+
+        </script> -->
+        <textarea rows="5" cols="50" placeholder="Compose your tweet..." id="tweetInput"></textarea>
+        <p id="characterCount">Character Count:0</p>
+        <script>
+            function updateCharacterCount() {
+
+                let currentLength = tweetInput.value.length;
+                characterCount.textContent =`Character Count: ${currentLength}`;
+            }
+
+            let tweetInput = document.getElementById('tweetInput');
+            let characterCount = document.getElementById('characterCount');
+            tweetInput.addEventListener('input', updateCharacterCount);
+        </script>
+    </body>
+</html>

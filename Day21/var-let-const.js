@@ -52,6 +52,14 @@ if (x == 10){
     console.log('x equals', x);
 }
 
+for (; x >= 10; x--){
+    console.log('x equals', x);
+
+}
+{
+    console.log('x equals', x);
+}
+
 console.log('x equals', x);
 
 function func() {
